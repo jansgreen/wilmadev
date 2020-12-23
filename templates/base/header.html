@@ -1,0 +1,98 @@
+{% block content -%}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-sm-12 col-md-8">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="imgUna">
+                            <style>
+                                .imgUna {
+                                    min-height: 320px;
+                                    max-height: 900px;
+                                    background-image: url("{{ url_for('static', filename='img/imgHeader.jpg') }}");
+                                    background-repeat: no-repeat, repeat;
+                                    background-size: cover;
+                                }
+                            </style>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5 class="text-uppercase text-danger">Sum</h5>
+                            <p>Conectividad 27/7, desde cualquier lugal.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgDos">
+                            <style>
+                                .imgDos {
+                                    min-height: 320px;
+                                    max-height: 900px;
+                                    background-image: url("{{ url_for('static', filename='img/imgHeader2.jpg') }}");
+                                    background-repeat: no-repeat, repeat;
+                                    background-size: cover;
+                                }
+                            </style>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5 class="text-uppercase text-danger">Estabilidad</h5>
+                            <p>Alta calidad, mejor servicio y mayor eficiencia.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgTres">
+
+                        <style>
+                            .imgTres {
+                                min-height: 320px;
+                                max-height: 900px;
+                                background-image: url("{{ url_for('static', filename='img/imgHeader3.jpg') }}");
+                                background-repeat: no-repeat, repeat;
+                                background-size: cover;
+                            }
+                        </style>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5 class="text-uppercase text-danger">Aseccible</h5>
+                            <p>Te presentamos el punto de venta mas Versatil.</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <div class="d-inline p-2 bg-dark rounded-pill">
+                        <span class="carousel-control-prev-icon  text-white" aria-hidden="true"></span>
+                        <span class="visually-hidden bg-dark text-white ">Previous</span>
+                    </div>
+                </a>
+                <a class="carousel-control-next " href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <div class="d-inline p-2 bg-dark rounded-pill">
+                        <span class="carousel-control-next-icon bg-dark text-white" aria-hidden="true"></span>
+                        <span class="visually-hidden bg-dark text-white">Next</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-sm-12 col-md-4">
+            <h4 class="text-primary">La Solución a sus Necesidades en Software</h4>
+            <p class="text-justify">
+
+                Tenemos la mejor solución para tu empresa
+                Lleva el control de los proceso de su empresa con nuestro poderoso software.
+
+                Nuestro sistema de soporte a la toma de Decisiones (DSS) hace minería de datos de la información
+                histórica, de esta forma se puede realizar gráficos dinámicos e inteligentes (Business Inteligence). que
+                te ayudan a tomar decisiones correctas y oportunas
+
+                Si tienes una idea, un proyecto o necesitas mejorar tus sistemas o asesoramiento para realizar una mejor
+                inversión en tecnología contacta con nosotros.</p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
