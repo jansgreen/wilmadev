@@ -10,6 +10,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/servicios')
+def servicios():
+    return render_template("servicios.html")
+
+
 if __name__ == '__main__':
     app.run(port=5500, debug=True)
 

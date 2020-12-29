@@ -13,7 +13,7 @@
 
 nav{
     position: fixed;
-    z-index: 5;
+    z-index: 9999;
 }
 
 /*MARGEN DEL CONTENIDO*/
@@ -129,4 +129,12 @@ margin-top: 15%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+.margen_columna{
+  margin-left: 60px;
+}
+.canasta_servicio{
+  color: #46a5fd;
+  font-size: 5em;
 }
