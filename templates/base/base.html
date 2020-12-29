@@ -1,49 +1,92 @@
 <!-- RECUERDA CAMBIAR TODAS LAS COMILLAS SIMPLES POR DOBLES-->
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-              <!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-              <meta charset="utf-8">
-              <title>wilmaDev</title>
-              <meta name="description" content="">
-              <meta name="author" content="">
-              <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-              <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-<!-- CSS  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-              <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-              <!-- Favicon  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-              <link rel="icon" type="image/png" href="{{ url_for('static', filename='css/favicon.css') }}">
-            </head>
-            <body class="container-fluid">
-           <!-- NAVBAR-->
-            <nav class="row">
-                <div class="col-sm-12 border bg-primary border-white">{% include "base/navbar.html" %}</div>
-            </nav>
- <!-- HEADER-->
- <div class="container">
-              <header class="row">
-                <div class="col-sm-12 border border-white">{% include "base/header.html" %}</div>
-              </header>
-              <!-- SECTION-->
-              <div class="row">
-                <section class="col-sm-12 col-md-6">{% include "base/contenidoDerecho.html" %}</section>
-                <aside class="col-sm-12 col-md-6 ">{% include "base/conenidoIzquierdo.html" %}</aside>
-              </div>
-            </div>
-              <!-- FOOTER-->
-              <footer class="row">
-            <div class="col-sm-6 bg-primary border border-white ">informacion de la pagina</div>
-                <div class="col-sm-6 bg-info border border-white">informacion social</div>
-              </footer>
-              </div>
-             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>wilmaDev</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Favicon  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='css/favicon.css') }}">
+</head>
+
+<body>
+  <!-- NAVBAR-->
+  <nav class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 border bg-primary border-white">{% include "base/navbar.html" %}</div>
+    </div>
+  </nav>
+  <!-- HEADER-->
+  <div class="container">
+    <header class="row">
+      <div class="col-sm-12 border border-white">{% include "base/header.html" %}</div>
+    </header>
+    <!-- SECTION-->
+    <div class="row">
+      <section class="col-sm-12 col-md-6">{% include "base/contenidoDerecho.html" %}</section>
+      <aside class="col-sm-12 col-md-6 ">{% include "base/conenidoIzquierdo.html" %}</aside>
+    </div>
+  </div>
+  <!-- FOOTER-->
+  <footer class="container-fluid">
+    <div class="row">
+
+      <div class="ocean">
+        <div class="wave"></div>
+      </div>
+    </div>
+
+    <div class="row footer_container justify-content-md-center">
+      <div class="col-sm-12 col-md-4 mt-3">
+        <h4 class="me-auto ms-auto">FOLLOW US</h4>
+        <i class="fab fa-facebook-f icon_footer_facebook mt-3"></i>
+        <i class="fab fa-twitter icon_footer_twitter mt-3"></i>
+        <i class="fab fa-instagram icon_footer_instagram mt-3"></i>
+        <i class="fab fa-invision icon_footer_invision mt-3"></i>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <table class="table-responsive">
+          <thead>
+            <tr>
+              <th ><h4>About</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Partners</td>
+            </tr>
+            <tr>
+              <td>FAQ's</td>
+            </tr>
+            <tr>
+              <td>Getting Started
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/c3e64e4d0f.js" crossorigin="anonymous"></script>
 
-            </body>
-            </html>
+</body>
+
+</html>

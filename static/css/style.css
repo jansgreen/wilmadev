@@ -8,3 +8,113 @@
 .iconoMenuDerecho{
     font-size: 5rem;
 }
+
+
+  
+  .ocean.v01 .wave {
+
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  }
+  
+  .ocean.v01 {
+      transform: rotate(180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    width: 6400px;
+    height: 200px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+
+  }
+  
+  .wave:nth-of-type(2) {
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translateY(-25px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+
+.footer_container{
+    margin-top: 9%;
+    background-color: #016b7e;
+    color:#ffffff;
+    position: relative; 
+
+}
+
+.footer-list > li{
+    background-color: #016b7e;
+    color:#ffffff;  
+}
+
+.icon_footer_facebook{
+    
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: #007ff7;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icon_footer_twitter{
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: #46a5fd;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icon_footer_instagram{
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: #f70088;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.icon_footer_invision{
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: #0056f7;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
