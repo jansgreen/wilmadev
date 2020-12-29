@@ -10,6 +10,12 @@
 }
 
 
+nav{
+    position: fixed;
+    z-index: 5;
+}
+
+/*DECORADOR DEL FOOTER ESTILO OLAS*/
   
   .ocean.v01 .wave {
 
