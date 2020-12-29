@@ -9,10 +9,16 @@
     font-size: 5rem;
 }
 
+/*NAVBAR ESTATICO*/
 
 nav{
     position: fixed;
     z-index: 5;
+}
+
+/*MARGEN DEL CONTENIDO*/
+.contenido_header{
+margin-top: 15%;
 }
 
 /*DECORADOR DEL FOOTER ESTILO OLAS*/
