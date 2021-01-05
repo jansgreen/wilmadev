@@ -14,6 +14,19 @@ def index():
 def servicios():
     return render_template("servicios.html")
 
+@app.route('/Nosotros')
+def Nosotros():
+    return render_template("Nosotros.html") 
+
+@app.route('/Contactanos')
+def Contactanos():
+    return render_template("Contactanos.html")
+
+@app.route('/Plan')
+def Plan():
+    visivilidad = "Fase" 
+    return render_template("Plan.html", visivilidad=visivilidad) 
+
 
 if __name__ == '__main__':
     app.run(port=5500, debug=True)

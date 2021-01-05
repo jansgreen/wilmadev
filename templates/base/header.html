@@ -46,36 +46,37 @@
                     <div class="carousel-item">
                         <div class="imgTres">
 
-                        <style>
-                            .imgTres {
-                                min-height: 320px;
-                                max-height: 900px;
-                                background-image: url("{{ url_for('static', filename='img/imgHeader3.jpg') }}");
-                                background-repeat: no-repeat, repeat;
-                                background-size: cover;
-                            }
-                        </style>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block bg-dark">
+                            <style>
+                                .imgTres {
+                                    min-height: 320px;
+                                    max-height: 900px;
+                                    background-image: url("{{ url_for('static', filename='img/imgHeader3.jpg') }}");
+                                    background-repeat: no-repeat, repeat;
+                                    background-size: cover;
+                                }
+                            </style>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark">
                             <h5 class="text-uppercase text-danger">Aseccible</h5>
                             <p>Te presentamos el punto de venta mas Versatil.</p>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <div class="d-inline p-2 bg-dark rounded-pill">
+                            <span class="carousel-control-prev-icon  text-white" aria-hidden="true"></span>
+                            <span class="visually-hidden bg-dark text-white ">Previous</span>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleCaptions" role="button"
+                        data-bs-slide="next">
+                        <div class="d-inline p-2 bg-dark rounded-pill">
+                            <span class="carousel-control-next-icon bg-dark text-white" aria-hidden="true"></span>
+                            <span class="visually-hidden bg-dark text-white">Next</span>
+                        </div>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                    <div class="d-inline p-2 bg-dark rounded-pill">
-                        <span class="carousel-control-prev-icon  text-white" aria-hidden="true"></span>
-                        <span class="visually-hidden bg-dark text-white ">Previous</span>
-                    </div>
-                </a>
-                <a class="carousel-control-next " href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                    <div class="d-inline p-2 bg-dark rounded-pill">
-                        <span class="carousel-control-next-icon bg-dark text-white" aria-hidden="true"></span>
-                        <span class="visually-hidden bg-dark text-white">Next</span>
-                    </div>
-                </a>
             </div>
         </div>
-    </div>
 
         <div class="col-sm-12 col-md-4">
             <h4 class="text-primary">La Solución a sus Necesidades en Software</h4>
@@ -90,7 +91,10 @@
 
                 Si tienes una idea, un proyecto o necesitas mejorar tus sistemas o asesoramiento para realizar una mejor
                 inversión en tecnología contacta con nosotros.</p>
-
+            {% if visivilidad %}
+            {% else %}
+            <a class="btn bg-success text-white" id="ex5" href="{{ url_for('Plan') }}">Comprar Servicio</a>
+            {% endif %}
         </div>
     </div>
 </div>

@@ -1,0 +1,73 @@
+{% extends "base/base.html" %}
+
+{% block content -%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row justify-content-md-center"><h1 class="text-justify"></h1>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="row justify-content-md-center">
+
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-sm-12 col-md-8 mt-3 margen_columna">
+      <form>
+        <fieldset >
+          <legend>Disabled fieldset example</legend>
+          <div class="mb-3">
+            <label for="username" class="form-label">Nombre a contactar</label>
+            <input type="text" id="username" class="form-control" placeholder="Escribe tu nombre o el nombre de la empresa que representas">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electronico">
+          </div>
+          <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Telefono</label>
+            <input type="p" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Direccion</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+          </div>
+          <div class="mb-3">
+            <label for="disabledSelect" class="form-label">Asunto</label>
+            <select id="disabledSelect" class="form-select">
+              <option>Soporte Tecnico</option>
+              <option>Sistema Administrativo</option>
+              <option>Sistema Financiero</option>
+              <option>Sistema Nómina</option>
+              <option>Intgeligencia Empresaríal</option>
+              <option>Otros</option>
+
+            </select>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Selecionando esta casilla esta indicando que esta de acuerdo con nuestras normas y politicas
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="col-sm-12 col-md-3 mt-3 margen_columna">
+    </div>
+
+</div>
+</div>
+
+
+
+{% endblock %}
