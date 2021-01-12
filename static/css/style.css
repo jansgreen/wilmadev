@@ -76,7 +76,12 @@ nav {
     transform: translateY(5px);
   }
 }*/
-
+.carousel-caption{
+  max-width:300px;
+  background-color: #0000006c;
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer_container {
   margin-top: 9%;
   background-color: #016b7e;
