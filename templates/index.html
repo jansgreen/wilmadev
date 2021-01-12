@@ -1,11 +1,18 @@
 {% extends "base/base.html" %}
 {% block content -%}
 <div class="container">
-    <div class="row">
-        <section class="col-sm-12 col-md-6">{% include "base/contenidoDerecho.html" %}</section>
-        <aside class="col-sm-12 col-md-6 ">{% include "base/conenidoIzquierdo.html" %}</aside>
+    <div class="mt-5">
+        <div class="row">
+            <section class="col-sm-12 col-md-6">{% include "base/contenidoDerecho.html" %}</section>
+            <aside class="col-sm-12 col-md-6 ">{% include "base/conenidoIzquierdo.html" %}</aside>
+        </div>
     </div>
-
 </div>
+{% include "serviciosCabezera.html" %}
+{% include "servicios.html" %}
+
+{% include "NosotrosCabezera.html" %}
+{% include "Nosotros.html" %}
+{% include "Contactanos.html" %}
 
 {% endblock %}

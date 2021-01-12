@@ -10,20 +10,20 @@
       <a class="navbar-brand text-white text-uppercase" href="#"> <img class="rounded-pill wilmadevLogo" src="{{ url_for('static', filename='img/wilmadev.jpeg') }}" alt=""> </a>
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white text-uppercase" aria-current="page" href="{{ url_for('index') }}"><i class="fas fa-home"></i>Inicio</a>
-        </li>
+          <a class="nav-link active text-white text-uppercase" aria-current="page" href="#index"><i class="fas fa-home"></i>Inicio</a>
+        </li><!--{{ url_for('index') }}-->
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="{{ url_for('servicios') }}"><i class="far fa-thumbs-up"></i>servicios</a>
-        </li>
+          <a class="nav-link text-white text-uppercase" href="#servicios"><i class="far fa-thumbs-up"></i>servicios</a>
+        </li> <!--{{ url_for('servicios') }}-->
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="{{ url_for('Nosotros') }}" tabindex="-1" aria-disabled="true"><i
-              class="fas fa-info-circle"></i>
+          <a class="nav-link text-white text-uppercase" href="#Nosotros" tabindex="-1" aria-disabled="true"><i
+              class="fas fa-info-circle"></i><!--{{ url_for('Nosotros') }}-->
 
             Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="{{ url_for('Contactanos') }}" tabindex="-1" aria-disabled="true"><i
-              class="fas fa-phone-volume"></i>Contactos</a>
+          <a class="nav-link text-white text-uppercase" href="#Contactanos" tabindex="-1" aria-disabled="true"><i
+              class="fas fa-phone-volume"></i>Contactos</a><!--{{ url_for('Contactanos') }}-->
         </li>
         <li class="nav-item">
           <a class="nav-link ml-5 text-white text-uppercase" href="#" tabindex="-1" aria-disabled="true"><i
