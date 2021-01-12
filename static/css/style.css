@@ -41,13 +41,15 @@ nav {
   position: absolute;
   width: 100%; /*185%*/
   height: 200px;
-/*  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  /*  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);*/
 }
 
-.container_Nosotros{
+.container_Nosotros {
   margin-top: 60px;
 }
+
+
 
 /*
 .wave:nth-of-type(2) {
@@ -177,4 +179,24 @@ nav {
   -webkit-box-shadow: 0px 0px 50px rgba(72, 214, 215, 0.1);
   -moz-box-shadow: 0px 0px 50px rgba(235, 211, 115, 0.1);
   box-shadow: 0px 0px 50px #eeff01;
+}
+
+
+@keyframes latidos {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: none;
+  }
+}
+/* En la clase corazon vamos a llamar latidos en la animación  */
+#ex5 {
+  display: inline-block;
+  animation: latidos 0.9s infinite;
+  transform-origin: center;
+  -webkit-animation: latidos 0.9s infinite;
 }
