@@ -168,31 +168,28 @@ nav {
 #ex5 {
   margin: 0px;
   opacity: 0.8;
-  border: 1px solid #d9ff00; /*Transition*/
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease; /*Reflection*/
-  -webkit-box-reflect: transparent 0px -webkit-gradient(linear, left top, left
-        bottom, from(transparent), color-stop(0.3, transparent), to(rgba(235, 235, 255, 0.8)));
+  border: 1px solid #d9ff00; 
+display: block;
 }
 
 
-/* En la clase corazon vamos a llamar latidos en la animación 
+/*
 #ex5 {
   display: inline-block;
-  animation: move 0.9s ease-in-out 3s  alternate;
-  -webkit-animation: move 0.9s ease-in-out 3s  alternate;
-  -moz-animation: move 0.9s ease-in-out 3s  alternate;
-  -o-animation: move 0.9s ease-in-out 3s  alternate;
+  animation: move 0.9s infinite;
+  animation-duration: 5s; 
+  -webkit-animation: move 0.9s   infinite;
+  -moz-animation: move 0.9s  alternate;
+  -o-animation: move 0.9s  alternate;
 }
 @keyframes move {
-  from {
+  0% {
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
-  }
+}
   50% {
     transform: scale(1.4);
     -webkit-transform: scale(1.4);
@@ -200,17 +197,17 @@ nav {
     -ms-transform: scale(1.4);
     -o-transform: scale(1.4);
   }
-  to {
+  100% {
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
-  }
+}
 
 }
-*/
 
+*/
 
 #ex5:hover {
   font-weight: bold;
