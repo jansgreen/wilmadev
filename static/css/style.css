@@ -21,8 +21,13 @@ nav {
   margin-top: 15%;
 }
 
+.container_Nosotros {
+  margin-top: 60px;
+}
+
 /*DECORADOR DEL FOOTER ESTILO OLAS*/
 
+/*
 .ocean.v01 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
     repeat-x;
@@ -39,19 +44,13 @@ nav {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
     repeat-x;
   position: absolute;
-  width: 100%; /*185%*/
+  width: 100%; /*185%
   height: 200px;
-  /*  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);*/
-}
-
-.container_Nosotros {
-  margin-top: 60px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
 }
 
 
-
-/*
 .wave:nth-of-type(2) {
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
     swell 7s ease -1.25s infinite;
@@ -76,8 +75,8 @@ nav {
     transform: translateY(5px);
   }
 }*/
-.carousel-caption{
-  max-width:300px;
+.carousel-caption {
+  max-width: 300px;
   background-color: #0000006c;
   margin-left: auto;
   margin-right: auto;
@@ -178,33 +177,43 @@ nav {
 }
 
 
-
-@keyframes latidos {
+/* En la clase corazon vamos a llamar latidos en la animación 
+#ex5 {
+  display: inline-block;
+  animation: move 0.9s ease-in-out 3s  alternate;
+  -webkit-animation: move 0.9s ease-in-out 3s  alternate;
+  -moz-animation: move 0.9s ease-in-out 3s  alternate;
+  -o-animation: move 0.9s ease-in-out 3s  alternate;
+}
+@keyframes move {
   from {
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
   50% {
     transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
   }
   to {
     transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
+
 }
-/* En la clase corazon vamos a llamar latidos en la animación  */
-#ex5 {
-  display: inline-block;
-  animation: latidos 0.9s infinite;
-  transform-origin: center;
-  -webkit-animation: latidos 0.9s infinite;
-}
+*/
+
 
 #ex5:hover {
   font-weight: bold;
   opacity: 1;
-  /*Reflection*/-webkit-box-reflect: below 170px -webkit-gradient(linear, left top, left        bottom, from(transparent), color-stop(0.3, transparent), to(rgba(235, 211, 115, 0.1)));
-  /*Glow*/-webkit-box-shadow: 0px 0px 50px rgba(72, 214, 215, 0.1);
-  -moz-box-shadow: 0px 0px 50px rgba(235, 211, 115, 0.1);
   box-shadow: 0px 0px 50px #eeff01;
-  animation: latidos 0.9s 3;
-  -webkit-animation: latidos 0.9s 3;
 }
