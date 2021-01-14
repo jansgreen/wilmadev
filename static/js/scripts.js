@@ -1,6 +1,8 @@
 /*$(document).ready(function () {
   $("#ex5").toggle("scale", 500);
 });*/
+
+/*
 $(document).ready(function() {	
   setInterval(function(){ 
     $("#ex5").ready(function(){
@@ -12,7 +14,7 @@ $(document).ready(function() {
   });
 }, 7000);
 });
-
+*/
 
 
 
