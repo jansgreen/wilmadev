@@ -168,57 +168,41 @@ nav {
 #ex5 {
   margin: 0px;
   opacity: 0.8;
-  border: 1px solid #d9ff00; 
-display: block;
+  border: 1px solid #d9ff00;
+  display: block;
 }
 
-
-
-
-  #ex5 {
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
+#ex5 {
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
-
-
 
 #ex5:hover {
   font-weight: bold;
   opacity: 1;
   box-shadow: 0px 0px 50px #eeff01;
-  transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @-webkit-keyframes bounce {
   from {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-}
-  50%{
-    transform: rotate(360deg);
-
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 0px 25px #eeff01;
   }
   to {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);  }
- }
-
-
-#ex5 { 
-  animation: bounce 3s infinite ;
-  -webkit-animation: bounce 3s 3s ;
+    box-shadow: none;
+  }
 }
 
+#ex5 {
+  animation: bounce 3s infinite;
+}
