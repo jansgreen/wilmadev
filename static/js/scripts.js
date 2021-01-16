@@ -2,21 +2,13 @@
   $("#ex5").toggle("scale", 500);
 });*/
 
-/*
-$(document).ready(function() {	
-  setInterval(function(){ 
-    $("#ex5").ready(function(){
-    $("#ex5").hide(1000);
-  });
- 
-  $("#ex5").ready(function(){
-    $("#ex5").show(1000);
-  });
-}, 7000);
-});
-*/
+$("#Modulo-Text").hover(function () {
+  $("#Modulo-Text")
+    .css({ 'transform': " rotateY(" + 360 + "deg)" }, 3000);
+    $("#h5-text").hide(2000);
+    $("#data-hover").show(2000);
 
-
+}, 3000);
 
 /*
 
