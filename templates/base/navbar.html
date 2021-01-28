@@ -10,19 +10,19 @@
       <a class="navbar-brand text-white text-uppercase" href="#"> <img class="rounded-pill wilmadevLogo" src="{{ url_for('static', filename='img/wilmadev.jpeg') }}" alt=""> </a>
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white text-uppercase" aria-current="page" href="#index"><i class="fas fa-home"></i>Inicio</a>
+          <a class="nav-link active text-white text-uppercase" aria-current="page" {% if data_nav %} href="/"{% else %} href="#index" {% endif %}><i class="fas fa-home"></i>Inicio</a>
         </li><!--{{ url_for('index') }}-->
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="#servicios"><i class="far fa-thumbs-up"></i>servicios</a>
+          <a class="nav-link text-white text-uppercase" {% if data_nav %} href="/#servicios"{% else %} href="#servicios"{% endif %}><i class="far fa-thumbs-up"></i>servicios</a>
         </li> <!--{{ url_for('servicios') }}-->
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="#Nosotros" tabindex="-1" aria-disabled="true"><i
+          <a class="nav-link text-white text-uppercase" {% if data_nav %} href="/#Nosotros"{% else %} href="#Nosotros"{% endif %}tabindex="-1" aria-disabled="true"><i
               class="fas fa-info-circle"></i><!--{{ url_for('Nosotros') }}-->
 
             Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-uppercase" href="#Contactanos" tabindex="-1" aria-disabled="true"><i
+          <a class="nav-link text-white text-uppercase"{% if data_nav %} href="/#Contactanos" {% else %}  href="#Contactanos"  {% endif %} tabindex="-1" aria-disabled="true"><i
               class="fas fa-phone-volume"></i>Contactos</a><!--{{ url_for('Contactanos') }}-->
         </li>
         <li class="nav-item">

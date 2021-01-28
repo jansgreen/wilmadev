@@ -24,8 +24,9 @@ def Contactanos():
 
 @app.route('/Plan')
 def Plan():
+    data_nav = "data_nav"
     visivilidad = "Fase" 
-    return render_template("Plan.html", visivilidad=visivilidad) 
+    return render_template("Plan.html", visivilidad=visivilidad, data_nav=data_nav ) 
 
 
 if __name__ == '__main__':
